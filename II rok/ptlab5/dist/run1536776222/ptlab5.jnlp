@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<jnlp spec="1.0" xmlns:jfx="http://javafx.com" href="ptlab5.jnlp">
+  <information>
+    <title>ptlab5</title>
+    <vendor>Filip</vendor>
+    <description>null</description>
+    <offline-allowed/>
+  </information>
+  <resources>
+    <jfx:javafx-runtime version="2.2+" href="http://javadl.sun.com/webapps/download/GetFile/javafx-latest/windows-i586/javafx2.jnlp"/>
+  </resources>
+  <resources>
+    <j2se version="1.6+" href="http://java.sun.com/products/autodl/j2se"/>
+    <jar href="lib/derby.jar" size="2673243" download="eager" />
+    <jar href="lib/derbyclient.jar" size="538361" download="eager" />
+    <jar href="lib/derbynet.jar" size="239835" download="eager" />
+    <jar href="lib/eclipselink.jar" size="8366225" download="eager" />
+    <jar href="lib/javax.persistence_2.1.0.v201304241213.jar" size="160564" download="eager" />
+    <jar href="lib/org.eclipse.persistence.jpa.jpql_2.5.1.v20130918-f2b9fc5.jar" size="1365645" download="eager" />
+    <jar href="ptlab5.jar" size="26246" download="eager" />
+  </resources>
+  <applet-desc  width="800" height="600" main-class="com.javafx.main.NoJavaFXFallback"  name="ptlab5" >
+    <param name="requiredFXVersion" value="2.2+"/>
+  </applet-desc>
+  <jfx:javafx-desc  width="800" height="600" main-class="ptlab5.Ptlab5"  name="ptlab5" />
+  <update check="always"/>
+</jnlp>

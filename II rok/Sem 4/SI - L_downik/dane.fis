@@ -1,0 +1,65 @@
+[System]
+Name='dane'
+Type='mamdani'
+Version=2.0
+NumInputs=3
+NumOutputs=1
+NumRules=16
+AndMethod='min'
+OrMethod='max'
+ImpMethod='min'
+AggMethod='max'
+DefuzzMethod='centroid'
+
+[Input1]
+Name='paliwo'
+Range=[0 4000]
+NumMFs=3
+MF1='mało':'gaussmf',[604.7 11.72]
+MF2='średnio':'gaussmf',[654.4 2000]
+MF3='dużo':'gaussmf',[679.6 4000]
+
+[Input2]
+Name='wysokosc'
+Range=[0 6000]
+NumMFs=4
+MF1='nisko':'sigmf',[-0.00259839776497541 1110]
+MF2='srednio':'gaussmf',[453 2723.68421052632]
+MF3='wysoko':'sigmf',[0.002279 4815]
+MF4='supernisko':'pimf',[-1837.73831775701 163.141682242991 163.141682242991 1962.26168224299]
+
+[Input3]
+Name='predkosc'
+Range=[-90 90]
+NumMFs=5
+MF1='ujemna_duza':'sigmf',[-0.194 -29.54]
+MF2='ujemna_mala':'gaussmf',[3.35 -12.06]
+MF3='dodatnia_duza':'sigmf',[0.2538 44.75]
+MF4='dodatnia_mala':'gaussmf',[3.823 16.54]
+MF5='brak':'gbellmf',[2.304 3 0.2099]
+
+[Output1]
+Name='sila'
+Range=[0 31000]
+NumMFs=3
+MF1='mala':'dsigmf',[0.004159 -1424 0.03904 1020]
+MF2='srednia':'gaussmf',[4254 10220]
+MF3='max':'gaussmf',[2552 31000]
+
+[Rules]
+0 1 1, 3 (1) : 1
+0 4 1, 3 (1) : 1
+0 4 2, 1 (1) : 1
+0 1 4, 1 (1) : 1
+0 3 1, 2 (1) : 1
+0 2 1, 3 (1) : 1
+0 1 1, 3 (1) : 1
+0 4 4, 1 (1) : 1
+0 4 3, 1 (1) : 1
+0 1 3, 1 (1) : 1
+0 1 4, 1 (1) : 1
+0 2 4, 1 (1) : 1
+0 2 3, 1 (1) : 1
+1 0 0, 1 (1) : 1
+2 0 0, 1 (1) : 1
+3 0 0, 3 (1) : 1

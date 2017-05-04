@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.control.cell.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" minHeight="270.0" prefHeight="270.0" prefWidth="563.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2" fx:controller="ptlab5.FXMLDocumentController">
+  <children>
+    <Button fx:id="button" layoutX="14.0" layoutY="235.0" onAction="#handleButtonAction" text="Click Me!" />
+    <Label fx:id="label" layoutX="126.0" layoutY="120.0" minHeight="16.0" minWidth="69.0" />
+    <TableView fx:id="tableView" layoutX="14.0" layoutY="14.0" prefHeight="200.0" prefWidth="200.0">
+      <columns>
+        <TableColumn text="ID" fx:id="bookIDColumn">
+          <cellValueFactory>
+            <PropertyValueFactory property="id" />
+          </cellValueFactory>
+        </TableColumn>
+        <TableColumn text="Tytuł" fx:id="titleColumn">
+          <cellValueFactory>
+            <PropertyValueFactory property="title" />
+          </cellValueFactory>
+        </TableColumn>
+      </columns>
+    </TableView>
+    <TableView  fx:id="authorsTableView" layoutX="236.0" layoutY="14.0" prefHeight="200.0" prefWidth="246.0">
+      <columns>
+        <TableColumn prefWidth="75.0" text="ID" fx:id="authorIDColumn" />
+        <TableColumn prefWidth="75.0" text="Imię" fx:id="nameColumn" />
+        <TableColumn prefWidth="75.0" text="Nazwisko" fx:id="surnameColumn" />
+      </columns>
+    </TableView>
+  </children>
+</AnchorPane>

@@ -1,0 +1,8 @@
+CC = g++ -O2 -I./sdl/include -L.
+LIBS = -lm -lSDL -lpthread -ldl
+SRC = main.cpp
+
+all: main
+
+main: $(SRC)
+	$(CC) -o $@ $(SRC) $(LIBS)

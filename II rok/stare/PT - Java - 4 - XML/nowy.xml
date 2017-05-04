@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<katalog>
+    <ksiazka tytul="Na ostrzu noża">
+        <autor imie="Miroslav" nazwisko="Zamboch"></autor>
+    </ksiazka>
+    <ksiazka tytul="a">
+        <autor imie="filip" nazwisko="a"/>
+    </ksiazka>
+</katalog>

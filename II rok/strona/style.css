@@ -1,0 +1,183 @@
+body 
+{
+	margin: 0 auto;
+	margin-top: 30px;
+	width: 1000px;
+	
+	font-family: 'Signika', sans-serif;
+	font-size: 1em;
+	background: #E0E0E0;
+}	
+
+#brakjs
+{
+	color: black;
+}
+
+#TOP_MENU 	/* górny panel nawigacyjny strony: od BUZZ do koszyka */
+{
+	margin-bottom:15px;
+	width: 1000px;
+	height: 50px;
+	float: left;
+	overflow: hidden;
+	
+	background: DodgerBlue;
+	color: white;
+	text-decoration: none;
+	text-align: center;
+	
+	-webkit-border-radius: 5px;
+	border-radius: 5px;
+}
+
+#MASK 		/* ramka na przesuwaj¹ce siê bannery ucinaj¹ce nadmiar obrazka */
+{
+	width: 1000px;
+	height: 150px;
+	overflow: hidden;
+	clear: both;
+	
+	-webkit-border-radius: 5px;
+	border-radius: 5px;
+}
+
+#BANNER 		/* przesuwaj¹ca siê galeria bannerów - obrazek 1 */
+{
+	position: relative;	
+	left: 0px;
+}
+	
+#BANNER2	/* przesuwaj¹ca siê galeria bannerów - obrazek 2*/
+{	
+	position: relative;
+	bottom: 205px;
+	left: 0px;
+	margin-left: 5px;
+}
+	
+#OPCJE		/*menu po lewej z tytu³ami filmów */
+{
+	width: 138px;
+	height: 595px;
+	float: left;
+	clear: both;
+	
+	background: #F0F0F0;
+	
+	border: solid 2px #D8D8D8;
+	border-top: 0px;
+}
+
+#PRODUKTY	/* g³ówne pole z produktami */
+{
+	padding: 15px;
+	width:828px;
+	min-height: 500px;
+	float: left;
+	
+	color: white;
+	text-align: center;
+}
+
+#STOPKA		/* informacje o autorze na samym dole */
+{
+	padding-top:250px;
+	padding-bottom: 50px;
+	clear: both;
+	
+	text-align: center;
+}
+
+.buzz		/* graficzna wstawka do #top_menu */
+{
+	width: 200px;
+	height: 50px;
+	padding-top:12px;
+	float: left;
+	cursor: pointer;
+	border: none;
+}
+
+.buzz:hover, .buzz:link, .buzz:visited
+{
+	height: 38px;
+	padding-top:12px;
+	border: 0px;
+	background: deepskyblue;
+}
+
+ul.top, li.top		/* formatowanie listy w #top_menu */
+{
+	margin: 0;
+	padding: 0;	
+	display: block;
+	
+	float: left;
+}
+
+ul.top a:link, ul.top a:visited
+{
+	width: 166px;
+	padding: 17px;
+	padding-bottom: 15px;
+	display: block;
+	
+	color: white;
+	text-decoration: none;
+	text-align: center;	
+}
+
+ul.top a:hover
+{
+	background: deepskyblue;
+}
+
+ul.left, li.left		/* formatowanie menu w #OPCJE z tytu³ami filmów */
+{
+	
+	margin: 0;
+	padding-left: 5px;
+	display: block;
+	
+	font-size:1em;
+	line-height: 200%;
+}
+
+li.left:hover
+{
+	color: DodgerBlue;
+	cursor: pointer;
+}
+
+h1:hover		/* nag³ówek "filmy" nad menu z filmami */
+{
+	cursor: pointer;
+	background: deepskyblue;
+}
+
+h1
+{
+	margin:0;
+	margin-top: 15px;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	width:142px;
+	
+	background: DodgerBlue;
+	color: white;
+	
+	text-align: center;
+	text-decoration: none;
+	
+	font-size:1em;
+	font-weight: 100;
+	
+	-webkit-border-top-left-radius: 5px;
+	-webkit-border-top-right-radius: 5px;
+	-moz-border-radius-topleft: 5px;
+	-moz-border-radius-topright: 5px;
+	border-top-left-radius: 5px;
+	border-top-right-radius: 5px;
+}
+a img { border: none; }
